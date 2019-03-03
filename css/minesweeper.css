@@ -1,0 +1,198 @@
+body {
+	background-color: #773399;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-family: Arial, Helvetica, sans-serif;
+	color:  #330033;
+}
+
+header {
+	margin: 0;
+	padding: 1em;
+	color: #ffccff;
+	text-shadow: 3px 3px #330033;
+	background-color: #220022;
+	border-bottom: 3px solid #ffccff;
+}
+
+footer {
+	margin: 0;
+	padding: 1em;
+	color: #ffccff;
+	background-color: #220022;
+}
+
+table {
+	border: 1px solid #330033;
+	border-radius: 10px;
+	background-color: #330033;
+	padding: 3px;
+}
+
+th, td {
+	border: 1px solid #330033;
+	background-color: #ffddff;
+	padding: 5px;
+	margin: 3px;
+	border-radius: 8px;
+	width: 12em;
+}
+
+th {
+	text-align: left;
+	width: 9em;
+}
+
+a:link {
+	color: #ee11ff;
+}
+
+a:visited {
+	color: #ee11ff;
+}
+
+a:hover {
+	color: pink;
+}
+
+a:active {
+	color: #ee11ff;
+}
+
+#buttons {
+	font-size: 1.75em;
+	display: block;
+	margin-top: 0.5em;
+}
+
+#buttons button {
+	font-size: 1em;
+	width: 20%;
+	margin-left: 1%;
+	margin-right: 1%;
+	border-radius: 3px;
+	background-color: #ccbbcc;
+	color: #330033;
+}
+
+#resetTimes {
+	font-size: 1em;
+	width: 20%;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border-radius: 3px;
+	background-color: #ccbbcc;
+	color: #330033;
+}
+
+#bombsLeftSpan {
+	color: #ffccff;
+	padding-top: 1.5em;
+}
+
+#timerSpan, #bombsLeftSpan {
+	font-size: 1.5em;
+	color: #ffccff;
+	padding: 0.75em;
+}
+
+#highScoreList h2 {
+	margin: 0;
+	padding: 0;
+}
+
+#minefield,  #highScoreList {
+	border-left: 3px solid #ffccff;
+	border-top: 3px solid #ffccff;
+	border-right: 3px solid #330033;
+	border-bottom: 3px solid #330033;
+	padding: 2%;
+	display: inline-block;
+}
+
+#minefield button {
+	background-color: #bbbbbb;
+	color: #bbbbbb;
+	font-size: 1.5em;
+	
+    width: 3.33%;
+    height: 33px;
+    
+    /*
+    display: inline-block;
+    overflow: hidden;
+    */
+    
+}
+
+#minefield .b0.clicked {
+	color: #999999;
+	background-color: #eeeeee;
+}
+
+#minefield .b1.clicked {
+	color: #6103b6;
+	background-color: #eeeeee;
+}
+
+#minefield .b2.clicked {
+	color: #e33bbf;
+	background-color: #eeeeee;
+}
+
+#minefield .b3.clicked {
+	color: #9744be;
+	background-color: #eeeeee;
+}
+
+#minefield .b4.clicked {
+	color: #ac68cc;
+	background-color: #eeeeee;
+}
+
+#minefield .b5.clicked {
+	color: blue;
+	background-color: #eeeeee;
+}
+
+#minefield .b6.clicked {
+	color: purple;
+	background-color: #eeeeee;
+}
+
+#minefield .b7.clicked {
+	color: magenta;
+	background-color: #eeeeee;
+}
+
+#minefield .b8.clicked {
+	color: pink;
+	background-color: #eeeeee;
+}
+
+#minefield button.noClick {
+	color: #330033;
+	background-color: #330033;
+}
+
+@media only screen and (max-width : 1024px) {
+    button#hard {
+        display: none;
+    }
+    
+    #minefield button {
+        width: 6.25%;
+        height: 33px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    button#medium {
+        display: none;
+    }
+    
+    #minefield button {
+        width: 12.33%;
+        height: 33px;
+    }
+}
