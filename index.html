@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Jeff Winning's Mine Sweeper</title>
+		<meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/minesweeper.css"/>
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/minesweeper.js"></script>
+        
+	</head>
+	<body>
+		<header>
+			<h1>Minesweeper!</h1>
+			<h2>Final JavaScript Project</h2>
+		</header>
+		<div id="buttons">
+			<span>Start a new game</span>
+			<button id="easy">Easy</button>
+			<button id="medium">Medium</button>
+			<button id="hard">Hard</button>	
+		</div>
+		<div id="bombsLeftSpan"> </div>
+		<div id="minefield"></div>
+		<div id="timerSpan"> </div>
+		<hr/>
+		<div id="highScoresList">
+			<h2>Record Times:</h2>
+			<table>
+				<tr>
+					<th>Easy</th>
+					<td id="easyChamp"></td>
+					<td id="easyBestTime"></td>
+				</tr>
+				<tr>
+					<th>Medium</th>
+					<td id="mediumChamp"></td>
+					<td id="mediumBestTime"></td>
+				</tr>
+				<tr>
+					<th>Hard</th>
+					<td id="hardChamp"></td>
+					<td id="hardBestTime"></td>
+				</tr>
+			</table>
+			<button id="resetTimes">Reset record times</button>
+		</div>
+		<hr/>
+		<h3>Instructions</h3>
+		<ul>
+			<li>Click on squares in the grid to uncover what's underneath</li>
+			<li>Avoid clicking any bombs! The numbers tell you how many of the
+				8 surrounding squares contain a bomb</li>
+			<li>Hold Shift and click to mark the location of bombs, hold Shift 
+				and click to remove a marker</li>
+			<li>Land mines are horrific. Enjoy playing this strategy game, and
+				then learn more about what you can do to.
+				<a href="http://www.icbl.org/en-gb/home.aspx" target="_blank">
+				Here is just one organization</a> that is working to end unexploded 
+				ordnance proliferation.</li>
+		</ul>
+		<footer>
+			&copy;&nbsp; Jeff Winning Fall 2016 &nbsp;&nbsp;|&nbsp;&nbsp;
+					Thanks to Larry Bouthillier and Jazahn Clevenger
+		</footer>
+	</body>
+</html>
