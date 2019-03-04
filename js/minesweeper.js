@@ -40,7 +40,7 @@ $(document).ready(function(){
 				this.addClass("noClick");
 				bombsLeft --;
 			}
-			bombsLeftSpan.textContent = bombsLeft + " bombs left.";
+			bombsLeftSpan.textContent = bombsLeft + " bombs left";
 			return this;
 		};
 	})(jQuery);
@@ -79,7 +79,7 @@ $(document).ready(function(){
 		pressingShift = false;
 		numBombs = bombs;
 		bombsLeft = bombs;
-		bombsLeftSpan.textContent = bombsLeft + " bombs left.";
+		bombsLeftSpan.textContent = bombsLeft + " bombs left";
 		timer = 0;
 		clearInterval(timerId);
 		timerId = setInterval(function(){
@@ -217,7 +217,7 @@ $(document).ready(function(){
 		});
 		if(unclickedCount == numBombs){
 			notFlagged.toggleFlag();
-			bombsLeftSpan.textContent = "0 bombs left.";
+			bombsLeftSpan.textContent = "0 bombs left";
 			clearInterval(timerId);
 			return true;
 		}
