@@ -221,6 +221,10 @@ a:active {
         display: none;
     }
     
+    td {
+        width: 45%;
+    }
+    
     #buttons button {
         width: 80%;
     }
