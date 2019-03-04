@@ -49,14 +49,17 @@ $(document).ready(function(){
 	$("#easy").click(function(){
 		newGame(8,8,10);
         $("#minefield button").css("width", "12.5%");
+        $("#minefield button").css("height", "33px");
 	});
 	$("#medium").click(function(){
 		newGame(16,16,40);
         $("#minefield button").css("width", "6.25%");
+        $("#minefield button").css("height", "33px");
 	});
 	$("#hard").click(function(){
 		newGame(16,30,99);
         $("#minefield button").css("width", "3.33%");
+        $("#minefield button").css("height", "29px");
 	});
 	
 	$("#resetTimes").click(function(){
