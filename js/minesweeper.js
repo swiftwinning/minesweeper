@@ -48,12 +48,15 @@ $(document).ready(function(){
 	//  Set up buttons to begin an Easy, Medium, or Hard game.
 	$("#easy").click(function(){
 		newGame(8,8,10);
+        $("#minefield button").css("width", "12.5%");
 	});
 	$("#medium").click(function(){
 		newGame(16,16,40);
+        $("#minefield button").css("width", "6.25%");
 	});
 	$("#hard").click(function(){
 		newGame(16,30,99);
+        $("#minefield button").css("width", "3.33%");
 	});
 	
 	$("#resetTimes").click(function(){
