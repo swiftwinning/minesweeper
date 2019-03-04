@@ -1,51 +1,47 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<title>Jeff Winning's Mine Sweeper</title>
+		<title>Jeff Winning's MineSweeper</title>
 		<meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/minesweeper.css"/>
-		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-		<script type="text/javascript" src="js/minesweeper.js"></script>
+		
         
 	</head>
 	<body>
 		<header>
-			<h1>Minesweeper!</h1>
-			<h2>Final JavaScript Project</h2>
+			<h1>MineSweeper!</h1>
 		</header>
 		<div id="buttons">
-			<span>Start a new game</span>
-			<button id="easy">Easy</button>
-			<button id="medium">Medium</button>
-			<button id="hard">Hard</button>	
+			<div>Start a new game</div>
+			<button id="easy">8x8 Game</button>
+			<button id="medium"  class="mediumViz">16x16 Game</button>
+			<button id="hard"  class="hardViz">16x30 Game</button>	
 		</div>
 		<div id="bombsLeftSpan"> </div>
 		<div id="minefield"></div>
-		<div id="timerSpan"> </div>
-		<hr/>
+        <div id="timerSpan"> </div>
 		<div id="highScoresList">
-			<h2>Record Times:</h2>
+			<h2>Record Time<span class="mediumViz">s</span>:</h2>
 			<table>
 				<tr>
-					<th>Easy</th>
+					<th>8x8</th>
 					<td id="easyChamp"></td>
 					<td id="easyBestTime"></td>
 				</tr>
-				<tr>
-					<th>Medium</th>
+				<tr class="mediumViz">
+					<th>16x16</th>
 					<td id="mediumChamp"></td>
 					<td id="mediumBestTime"></td>
 				</tr>
-				<tr>
-					<th>Hard</th>
+				<tr class="hardViz">
+					<th>16x30</th>
 					<td id="hardChamp"></td>
 					<td id="hardBestTime"></td>
 				</tr>
 			</table>
-			<button id="resetTimes">Reset record times</button>
+			<button id="resetTimes">Reset record time<span class="mediumViz">s</span></button>
 		</div>
-		<hr/>
 		<h3>Instructions</h3>
 		<ul>
 			<li>Click on squares in the grid to uncover what's underneath</li>
@@ -60,8 +56,11 @@
 				ordnance proliferation.</li>
 		</ul>
 		<footer>
-			&copy;&nbsp; Jeff Winning Fall 2016 &nbsp;&nbsp;|&nbsp;&nbsp;
-					Thanks to Larry Bouthillier and Jazahn Clevenger
-		</footer>
+			&copy;2016 Jeff Winning | Thanks to Professor Larry Bouthillier and TA Jazahn Clevenger
+		</footer>     
+        
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/minesweeper.js"></script>
+        
 	</body>
 </html>

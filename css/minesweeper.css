@@ -173,24 +173,18 @@ a:active {
 	background-color: #330033;
 }
 
+#highScoresList {
+    display: block;
+}
+
 @media only screen and (max-width : 1024px) {
-    button#hard {
+    .hardViz {
         display: none;
-    }
-    
-    #minefield button {
-        width: 6.25%;
-        height: 33px;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    button#medium {
+    .mediumViz {
         display: none;
-    }
-    
-    #minefield button {
-        width: 12.33%;
-        height: 33px;
     }
 }
